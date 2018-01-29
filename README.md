@@ -1,4 +1,4 @@
-# Ancilliary Files for "Bayesian Inference for Randomized Benchmarking Protocols"
+# Code for "Bayesian Inference for Randomized Benchmarking Protocols"
 
 - Ian Hincks
 - Joel J. Wallman
@@ -8,7 +8,7 @@
 
 ## Introduction
 
-This repository contains all source code necessary to reproduce the results found in the paper _Bayesian Inference for Randomized Benchmarking Protocols_. Questions about the contents of this repository should be submitted as GitHub issues to this library, so that everyone can benefit from the answer. If private communication is desired, please contact ihincks@uwaterloo.ca.
+This repository contains all source code necessary to reproduce the results found in the paper _Bayesian Inference for Randomized Benchmarking Protocols_. Plase submit questions about using this repository as GitHub issues.
 
 ## Requirements
 
