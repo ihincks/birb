@@ -59,4 +59,6 @@ $ pip install -r requirements.txt
 
 #### By Table Number
 
+- Table 2: `src/beta-reparameterizations.*`
+
 #### By Equation Number
