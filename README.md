@@ -48,14 +48,22 @@ $ pip install -r requirements.txt
 
 #### By Figure Number
 
-- Figure 1: `src/sequence-reuse-calculations.*`, subsection _"Weighted Cramer-Rao Bound Plots"_
-- Figure 2: `src/sequence-reuse-calculations.*`, subsection _"Generalization to Finite Switching Cost"_
-- Figure 3: ` `, 
-- Figure 4: ` `, 
-- Figure 5: ` `, 
-- Figure 6: ` `, 
-- Figure 7: ` `, 
-- Figure 8: ` `, 
+- [Figure 1](https://github.com/ihincks/birb/blob/master/fig/betabin-crb.pdf): 
+`src/sequence-reuse-calculations.*`, subsection _"Weighted Cramer-Rao Bound Plots"_
+- [Figure 2](https://github.com/ihincks/birb/blob/master/fig/unitarity-optimal-switching-cost.pdf): 
+`src/sequence-reuse-calculations.*`, subsection _"Generalization to Finite Switching Cost"_
+- [Figure 3](https://github.com/ihincks/birb/blob/master/fig/different-noise-models-summary.pdf): 
+` `, 
+- [Figure 4](https://github.com/ihincks/birb/blob/master/fig/different-noise-models-comparison.pdf): 
+` `, 
+- [Figure 5](https://github.com/ihincks/birb/blob/master/fig/different-noise-models-survival-dists.pdf): 
+` `, 
+- [Figure 6](https://github.com/ihincks/birb/blob/master/fig/low-data.pdf): 
+` `, 
+- [Figure 7](https://github.com/ihincks/birb/blob/master/fig/pathological-survival-distributions.pdf): 
+` `, 
+- [Figure 8](https://github.com/ihincks/birb/blob/master/fig/lrb-posterior.pdf): 
+` `, 
 
 #### By Table Number
 
