@@ -1,0 +1,554 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     15989,        546]
+NotebookOptionsPosition[     14485,        489]
+NotebookOutlinePosition[     14824,        504]
+CellTagsIndexPosition[     14781,        501]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Beta", "Section",
+ CellChangeTimes->{{3.702992898537073*^9, 3.702992902248856*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"dist", "=", 
+   RowBox[{"BetaDistribution", "[", 
+    RowBox[{"\[Alpha]", ",", "\[Beta]"}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.702992935977742*^9, 3.70299295220277*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[Cell[BoxData[
+ FormBox[
+  RowBox[{"(", 
+   RowBox[{"\[Mu]", ",", 
+    SuperscriptBox["\[Sigma]", "2"]}], ")"}], TraditionalForm]],
+ FormatType->"TraditionalForm"]], "Subsubsection",
+ CellChangeTimes->{{3.7262509562079144`*^9, 3.726250961805254*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Solve", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"\[Mu]", "==", 
+       RowBox[{"Mean", "[", "dist", "]"}]}], ",", 
+      RowBox[{"\[Sigma]2", "==", 
+       RowBox[{"Variance", "[", "dist", "]"}]}]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"\[Alpha]", ",", "\[Beta]"}], "}"}]}], "]"}], "//", 
+  "FullSimplify"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Solve", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"\[Mu]", "==", 
+       RowBox[{"Mean", "[", "dist", "]"}]}], ",", 
+      RowBox[{"\[Sigma]2", "==", 
+       RowBox[{"Variance", "[", "dist", "]"}]}]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"\[Mu]", ",", "\[Sigma]2"}], "}"}]}], "]"}], "//", 
+  "FullSimplify"}]}], "Input",
+ CellChangeTimes->{{3.702992904374351*^9, 3.702993030475775*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"\[Alpha]", "\[Rule]", 
+     RowBox[{"-", 
+      FractionBox[
+       RowBox[{"\[Mu]", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"-", "1"}], "+", "\[Mu]"}], ")"}], " ", "\[Mu]"}], "+", 
+          "\[Sigma]2"}], ")"}]}], "\[Sigma]2"]}]}], ",", 
+    RowBox[{"\[Beta]", "\[Rule]", 
+     RowBox[{
+      RowBox[{"-", "1"}], "+", "\[Mu]", "+", 
+      FractionBox[
+       RowBox[{
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"-", "1"}], "+", "\[Mu]"}], ")"}], "2"], " ", "\[Mu]"}], 
+       "\[Sigma]2"]}]}]}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{{3.702992931720615*^9, 3.702992953433416*^9}, {
+   3.70299298547079*^9, 3.702993031019361*^9}, 3.7262508856207027`*^9}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"\[Mu]", "\[Rule]", 
+     FractionBox["\[Alpha]", 
+      RowBox[{"\[Alpha]", "+", "\[Beta]"}]]}], ",", 
+    RowBox[{"\[Sigma]2", "\[Rule]", 
+     FractionBox[
+      RowBox[{"\[Alpha]", " ", "\[Beta]"}], 
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{"\[Alpha]", "+", "\[Beta]"}], ")"}], "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{"1", "+", "\[Alpha]", "+", "\[Beta]"}], ")"}]}]]}]}], "}"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{{3.702992931720615*^9, 3.702992953433416*^9}, {
+   3.70299298547079*^9, 3.702993031019361*^9}, 3.7262508856474857`*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[Cell[BoxData[
+ FormBox[
+  RowBox[{"(", 
+   RowBox[{"\[Mu]", ",", 
+    SubscriptBox["\[Mu]", "2"]}], ")"}], TraditionalForm]],
+ FormatType->"TraditionalForm"]], "Subsubsection",
+ CellChangeTimes->{{3.726250968440845*^9, 3.726250972010474*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Solve", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"\[Mu]", "==", 
+       RowBox[{"Mean", "[", "dist", "]"}]}], ",", 
+      RowBox[{"\[Mu]2", "\[Equal]", 
+       RowBox[{"Moment", "[", 
+        RowBox[{"dist", ",", "2"}], "]"}]}]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"\[Alpha]", ",", "\[Beta]"}], "}"}]}], "]"}], "//", 
+  "FullSimplify"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Solve", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"\[Mu]", "==", 
+       RowBox[{"Mean", "[", "dist", "]"}]}], ",", 
+      RowBox[{"\[Mu]2", "\[Equal]", 
+       RowBox[{"Moment", "[", 
+        RowBox[{"dist", ",", "2"}], "]"}]}]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"\[Mu]", ",", "\[Mu]2"}], "}"}]}], "]"}], "//", 
+  "FullSimplify"}]}], "Input",
+ CellChangeTimes->{{3.7262508712404003`*^9, 3.726250900184978*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"\[Alpha]", "\[Rule]", 
+     FractionBox[
+      RowBox[{"\[Mu]", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", "\[Mu]"}], "+", "\[Mu]2"}], ")"}]}], 
+      RowBox[{
+       SuperscriptBox["\[Mu]", "2"], "-", "\[Mu]2"}]]}], ",", 
+    RowBox[{"\[Beta]", "\[Rule]", 
+     FractionBox[
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", "1"}], "+", "\[Mu]"}], ")"}], " ", 
+       RowBox[{"(", 
+        RowBox[{"\[Mu]", "-", "\[Mu]2"}], ")"}]}], 
+      RowBox[{
+       SuperscriptBox["\[Mu]", "2"], "-", "\[Mu]2"}]]}]}], "}"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{{3.726250896944655*^9, 3.726250900449527*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"\[Mu]", "\[Rule]", 
+     FractionBox["\[Alpha]", 
+      RowBox[{"\[Alpha]", "+", "\[Beta]"}]]}], ",", 
+    RowBox[{"\[Mu]2", "\[Rule]", 
+     FractionBox[
+      RowBox[{"\[Alpha]", " ", 
+       RowBox[{"(", 
+        RowBox[{"1", "+", "\[Alpha]"}], ")"}]}], 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"\[Alpha]", "+", "\[Beta]"}], ")"}], " ", 
+       RowBox[{"(", 
+        RowBox[{"1", "+", "\[Alpha]", "+", "\[Beta]"}], ")"}]}]]}]}], "}"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{{3.726250896944655*^9, 3.7262509004733553`*^9}}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[Cell[BoxData[
+ FormBox[
+  RowBox[{"(", 
+   RowBox[{"\[Mu]", ",", "t"}], ")"}], TraditionalForm]],
+ FormatType->"TraditionalForm"]], "Subsubsection",
+ CellChangeTimes->{{3.726250974335012*^9, 3.7262509846026583`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Solve", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"\[Mu]", "==", 
+       RowBox[{"Mean", "[", "dist", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"t", " ", 
+        RowBox[{"Mean", "[", "dist", "]"}], 
+        RowBox[{"(", 
+         RowBox[{"1", "-", 
+          RowBox[{"Mean", "[", "dist", "]"}]}], ")"}]}], "==", 
+       RowBox[{"Variance", "[", "dist", "]"}]}]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"\[Alpha]", ",", "\[Beta]"}], "}"}]}], "]"}], "//", 
+  "FullSimplify"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Solve", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"\[Mu]", "==", 
+       RowBox[{"Mean", "[", "dist", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"t", " ", 
+        RowBox[{"Mean", "[", "dist", "]"}], 
+        RowBox[{"(", 
+         RowBox[{"1", "-", 
+          RowBox[{"Mean", "[", "dist", "]"}]}], ")"}]}], "==", 
+       RowBox[{"Variance", "[", "dist", "]"}]}]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"\[Mu]", ",", "t"}], "}"}]}], "]"}], "//", 
+  "FullSimplify"}]}], "Input",
+ CellChangeTimes->{{3.70299306083184*^9, 3.702993107354492*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"\[Alpha]", "\[Rule]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", "1"}], "+", 
+        FractionBox["1", "t"]}], ")"}], " ", "\[Mu]"}]}], ",", 
+    RowBox[{"\[Beta]", "\[Rule]", 
+     FractionBox[
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", "1"}], "+", "t"}], ")"}], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", "1"}], "+", "\[Mu]"}], ")"}]}], "t"]}]}], "}"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.70299310887318*^9}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"\[Mu]", "\[Rule]", 
+     FractionBox["\[Alpha]", 
+      RowBox[{"\[Alpha]", "+", "\[Beta]"}]]}], ",", 
+    RowBox[{"t", "\[Rule]", 
+     FractionBox["1", 
+      RowBox[{"1", "+", "\[Alpha]", "+", "\[Beta]"}]]}]}], "}"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.702993108877556*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[Cell[BoxData[
+ FormBox[
+  RowBox[{"(", 
+   RowBox[{"\[Mu]", ",", "r"}], ")"}], TraditionalForm]],
+ FormatType->"TraditionalForm"]], "Subsubsection",
+ CellChangeTimes->{{3.7262509900805073`*^9, 3.7262509938026943`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Solve", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"\[Mu]", "==", 
+       RowBox[{"Mean", "[", "dist", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"r", " ", 
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"Mean", "[", "dist", "]"}], 
+           RowBox[{"(", 
+            RowBox[{"1", "-", 
+             RowBox[{"Mean", "[", "dist", "]"}]}], ")"}]}], ")"}], "2"]}], "==", 
+       RowBox[{"Variance", "[", "dist", "]"}]}]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"\[Alpha]", ",", "\[Beta]"}], "}"}]}], "]"}], "//", 
+  "FullSimplify"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Solve", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"\[Mu]", "==", 
+       RowBox[{"Mean", "[", "dist", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"r", " ", 
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"Mean", "[", "dist", "]"}], 
+           RowBox[{"(", 
+            RowBox[{"1", "-", 
+             RowBox[{"Mean", "[", "dist", "]"}]}], ")"}]}], ")"}], "2"]}], "==", 
+       RowBox[{"Variance", "[", "dist", "]"}]}]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"\[Mu]", ",", "r"}], "}"}]}], "]"}], "//", 
+  "FullSimplify"}]}], "Input",
+ CellChangeTimes->{{3.70299333538475*^9, 3.7029934109068623`*^9}, {
+  3.702995972103818*^9, 3.7029959778711147`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"\[Alpha]", "\[Rule]", 
+     RowBox[{
+      RowBox[{"-", "\[Mu]"}], "+", 
+      FractionBox["1", 
+       RowBox[{"r", "-", 
+        RowBox[{"r", " ", "\[Mu]"}]}]]}]}], ",", 
+    RowBox[{"\[Beta]", "\[Rule]", 
+     RowBox[{
+      RowBox[{"-", "1"}], "+", 
+      FractionBox["1", 
+       RowBox[{"r", " ", "\[Mu]"}]], "+", "\[Mu]"}]}]}], "}"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.702993343963437*^9, 3.7029933781401663`*^9, 
+  3.702993411516864*^9, 3.7029959783286877`*^9}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"\[Mu]", "\[Rule]", 
+     FractionBox["\[Alpha]", 
+      RowBox[{"\[Alpha]", "+", "\[Beta]"}]]}], ",", 
+    RowBox[{"r", "\[Rule]", 
+     FractionBox[
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"\[Alpha]", "+", "\[Beta]"}], ")"}], "2"], 
+      RowBox[{"\[Alpha]", " ", "\[Beta]", " ", 
+       RowBox[{"(", 
+        RowBox[{"1", "+", "\[Alpha]", "+", "\[Beta]"}], ")"}]}]]}]}], "}"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.702993343963437*^9, 3.7029933781401663`*^9, 
+  3.702993411516864*^9, 3.702995978345716*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[Cell[BoxData[
+ FormBox[
+  RowBox[{"(", 
+   RowBox[{"\[Mu]", ",", "s"}], ")"}], TraditionalForm]],
+ FormatType->"TraditionalForm"]], "Subsubsection",
+ CellChangeTimes->{{3.726251002401886*^9, 3.726251009315955*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Solve", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"\[Mu]", "==", 
+       RowBox[{"Mean", "[", "dist", "]"}]}], ",", 
+      RowBox[{"s", "\[Equal]", 
+       RowBox[{"\[Alpha]", "+", "\[Beta]"}]}]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"\[Alpha]", ",", "\[Beta]"}], "}"}]}], "]"}], "//", 
+  "FullSimplify"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Solve", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"\[Mu]", "==", 
+       RowBox[{"Mean", "[", "dist", "]"}]}], ",", 
+      RowBox[{"s", "\[Equal]", 
+       RowBox[{"\[Alpha]", "+", "\[Beta]"}]}]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"\[Mu]", ",", "s"}], "}"}]}], "]"}], "//", 
+  "FullSimplify"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Solve", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"\[Mu]", "==", 
+       RowBox[{"Mean", "[", "dist", "]"}]}], ",", 
+      RowBox[{"s", "\[Equal]", 
+       RowBox[{"\[Alpha]", "+", "\[Beta]"}]}], ",", 
+      RowBox[{"\[Sigma]2", "\[Equal]", 
+       RowBox[{"Variance", "[", "dist", "]"}]}]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"\[Alpha]", ",", "\[Beta]", ",", "\[Sigma]2"}], "}"}]}], "]"}], "//",
+   "FullSimplify"}]}], "Input",
+ CellChangeTimes->{{3.702993497045339*^9, 3.7029935136751328`*^9}, {
+  3.702995820209812*^9, 3.702995874454014*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"\[Alpha]", "\[Rule]", 
+     RowBox[{"s", " ", "\[Mu]"}]}], ",", 
+    RowBox[{"\[Beta]", "\[Rule]", 
+     RowBox[{"s", "-", 
+      RowBox[{"s", " ", "\[Mu]"}]}]}]}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{{3.702993509390069*^9, 3.702993514038714*^9}, {
+  3.702995861039877*^9, 3.7029958752406588`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"\[Mu]", "\[Rule]", 
+     FractionBox["\[Alpha]", 
+      RowBox[{"\[Alpha]", "+", "\[Beta]"}]]}], ",", 
+    RowBox[{"s", "\[Rule]", 
+     RowBox[{"\[Alpha]", "+", "\[Beta]"}]}]}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{{3.702993509390069*^9, 3.702993514038714*^9}, {
+  3.702995861039877*^9, 3.702995875241892*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"\[Alpha]", "\[Rule]", 
+     RowBox[{"s", " ", "\[Mu]"}]}], ",", 
+    RowBox[{"\[Beta]", "\[Rule]", 
+     RowBox[{"s", "-", 
+      RowBox[{"s", " ", "\[Mu]"}]}]}], ",", 
+    RowBox[{"\[Sigma]2", "\[Rule]", 
+     RowBox[{"-", 
+      FractionBox[
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", "1"}], "+", "\[Mu]"}], ")"}], " ", "\[Mu]"}], 
+       RowBox[{"1", "+", "s"}]]}]}]}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{{3.702993509390069*^9, 3.702993514038714*^9}, {
+  3.702995861039877*^9, 3.70299587525089*^9}}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1615, 1026},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"11.0 for Linux x86 (64-bit) (September 21, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 89, 1, 65, "Section"],
+Cell[672, 25, 217, 5, 34, "Input"],
+Cell[CellGroupData[{
+Cell[914, 34, 263, 6, 40, "Subsubsection"],
+Cell[CellGroupData[{
+Cell[1202, 44, 838, 25, 57, "Input"],
+Cell[2043, 71, 865, 26, 54, "Output"],
+Cell[2911, 99, 656, 18, 51, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3616, 123, 256, 6, 37, "Subsubsection"],
+Cell[CellGroupData[{
+Cell[3897, 133, 897, 27, 57, "Input"],
+Cell[4797, 162, 720, 23, 51, "Output"],
+Cell[5520, 187, 609, 18, 52, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6178, 211, 230, 5, 37, "Subsubsection"],
+Cell[CellGroupData[{
+Cell[6433, 220, 1161, 35, 57, "Input"],
+Cell[7597, 257, 571, 20, 49, "Output"],
+Cell[8171, 279, 353, 11, 51, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8573, 296, 232, 5, 37, "Subsubsection"],
+Cell[CellGroupData[{
+Cell[8830, 305, 1400, 42, 71, "Input"],
+Cell[10233, 349, 547, 17, 51, "Output"],
+Cell[10783, 368, 602, 17, 57, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11434, 391, 228, 5, 37, "Subsubsection"],
+Cell[CellGroupData[{
+Cell[11687, 400, 1368, 40, 80, "Input"],
+Cell[13058, 442, 376, 10, 34, "Output"],
+Cell[13437, 454, 388, 10, 48, "Output"],
+Cell[13828, 466, 617, 18, 49, "Output"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
