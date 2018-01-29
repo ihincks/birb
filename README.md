@@ -48,11 +48,15 @@ $ pip install -r requirements.txt
 
 #### By Figure Number
 
-- Figure 1: ` `, 
-- Figure 2: ` `, 
+- Figure 1: `src/sequence-reuse-calculations.*`, subsection _"Weighted Cramer-Rao Bound Plots"_
+- Figure 2: `src/sequence-reuse-calculations.*`, subsection _"Generalization to Finite Switching Cost"_
 - Figure 3: ` `, 
 - Figure 4: ` `, 
 - Figure 5: ` `, 
 - Figure 6: ` `, 
 - Figure 7: ` `, 
 - Figure 8: ` `, 
+
+#### By Table Number
+
+#### By Equation Number
