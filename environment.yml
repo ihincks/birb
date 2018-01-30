@@ -1,0 +1,16 @@
+name: birb-code
+channels:
+- defaults
+- conda-forge
+dependencies:
+- numpy
+- scipy
+- seaborn
+- matplotlib
+- pystan
+- scikit-learn
+- pandas
+- dill
+- pip:
+  - h5py
+  - tqdm
