@@ -13,7 +13,6 @@ import warnings
 from six import StringIO
 import copy
 from tqdm import tqdm
-from wurlitzer import pipes, STDOUT
 import scipy.optimize as opt
 import scipy.stats as st
 from scipy.special import binom, gammaln, xlogy, expm1, log1p, logit, expit, psi
@@ -721,33 +720,3 @@ class TqdmUpTo(tqdm):
         if tsize is not None:
             self.total = tsize
         self.update(b * bsize - self.n)  # will also set self.n = b * bsize
-        
-class CallbackStringIO(StringIO):
-    def __init__(self, callback, initial_value='', newline='\n'):
-        self._callback=callback
-        super(CallbackStringIO, self).__init__(
-            initial_value=initial_value, 
-            newline=newline
-        )
-    def write(self, s):
-        self._callback(s)
-        super(CallbackStringIO, self).write(s)
-        
-class StanModelWrapper(ps.StanModel):
-    def __init__(self, model):
-        self._model = model
-
-    def get_cpp_code(self):
-        return self._model.get_cpp_code()
-    def get_cxxflags(self):
-        return self._model.get_cxxflags()
-
-    def sampling(self, *args, **kwargs):
-        def print_stdout(s):
-            print s
-        out = CallbackStringIO(print_stdout)
-        with pipes(stdout=out, stderr=STDOUT):
-            result = self._model.sampling(*args, **kwargs)
-        print out.getvalue()
-        return result
-        
