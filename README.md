@@ -27,7 +27,7 @@ The following third party _Mathematica_ packages are required to run these noteb
 
 All code is run from [Jupyter notebooks](http://jupyter.org/). These notebooks can be viewed online by browsing the GitHub tree structure above, opening files with the `.ipynb` extension. See the manifests below to figure out which file does what.
 
-To run or modify these notebooks, we recommend using a conda virtual environment, installed with 
+To run or modify these notebooks on your own computer, we recommend using a conda virtual environment to install dependencies:
 
 ```bash
 $ conda env create -f environment.yml
