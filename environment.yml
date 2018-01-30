@@ -3,6 +3,8 @@ channels:
 - defaults
 - conda-forge
 dependencies:
+- python=2.7
+- nb_conda
 - numpy
 - scipy
 - seaborn
