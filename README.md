@@ -64,7 +64,8 @@ subsection _"Comparison Plots"_
 [`src/rb-dp-different_noise_models.ipynb`](https://github.com/ihincks/birb/blob/master/src/rb-dp-different_noise_models.ipynb), 
 subsection _"Comparison Plots"_
 - [Figure 6](https://github.com/ihincks/birb/blob/master/fig/low-data.pdf): 
-` `, 
+[`src/rb-dp-different_noise_models.ipynb`](https://github.com/ihincks/birb/blob/master/src/rb-low_data.ipynb), 
+subsection _"Plots"_
 - [Figure 7](https://github.com/ihincks/birb/blob/master/fig/pathological-survival-distributions.pdf): 
 [`src/rb-dp-pathological_model.ipynb`](https://github.com/ihincks/birb/blob/master/src/rb-dp-pathological_model.ipynb) 
 - [Figure 8](https://github.com/ihincks/birb/blob/master/fig/lrb-posterior.pdf): 
