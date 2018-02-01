@@ -69,7 +69,7 @@ subsection _"Plots"_
 - [Figure 7](https://github.com/ihincks/birb/blob/master/fig/pathological-survival-distributions.pdf): 
 [`src/rb-dp-pathological_model.ipynb`](https://github.com/ihincks/birb/blob/master/src/rb-dp-pathological_model.ipynb) 
 - [Figure 8](https://github.com/ihincks/birb/blob/master/fig/lrb-posterior.pdf): 
-` `, 
+[`src/lrb.ipynb`](https://github.com/ihincks/birb/blob/master/src/lrb.ipynb) 
 
 #### By Table Number
 
